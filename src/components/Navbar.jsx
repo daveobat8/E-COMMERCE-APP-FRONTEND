@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ function Navbar() {
   return (
     <>
       <nav id="desktop-nav">
-        <div className="logo">
+        <NavLink to='/' className="logo">
           Nunua <div> <img src="logo.png" alt="Cart" className=" logo_icon" /></div>
-        </div>
+        </NavLink>
         <div>
           <ul className="nav-links">
             

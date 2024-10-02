@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 
-function Home() {
+function Welcome() {
   return (
     <>
       <div className="home">
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Welcome;

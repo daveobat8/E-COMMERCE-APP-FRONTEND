@@ -66,10 +66,13 @@ a:hover{
   font-size: 1.5rem;
   display: flex;
   gap: 4px;
+  color: inherit;
 }
 
 .logo:hover{
-  cursor: default;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* HAMBURGER MENU */
@@ -163,14 +166,13 @@ a:hover{
 
 /*ICONS*/
 .icon{
-    cursor: pointer;
     padding: 2px 0;
     margin: 0;
     height: 1.5rem;
   }
 
 .logo_icon{
-    cursor: pointer;
+    cursor: default;
     padding: 5px 0;
     margin: 0;
     height: 1.5rem;
@@ -284,7 +286,19 @@ a:hover{
     font-size: 14px;
     padding: 4px;
 } */
+.search-container {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+}
 
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #23d61d;
+  border-radius: 5px;
+  font-size: 16px;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -309,4 +323,91 @@ a:hover{
   max-height: 200px; 
   object-fit: cover; 
   border-radius: 8px;
+}
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.add-to-cart, .view-product {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.view-product{
+  background-color: #008CBA;
+  color: white;
+}
+
+.add-to-cart:hover, .view-product:hover {
+  opacity: 0.9;
+}
+.product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-details {
+  display: flex;
+  margin: 20px;
+ 
+}
+
+.product-image2 {
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  margin-right: 4rem;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  text-align: left;
+  margin: 0 20px ;
+}
+
+.product-description {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-rating,
+.product-price,
+.product-stock {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.add-to-cart2 {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
 }
