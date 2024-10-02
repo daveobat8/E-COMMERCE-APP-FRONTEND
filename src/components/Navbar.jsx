@@ -20,7 +20,7 @@ function Navbar() {
               <a href="#shop">Shop</a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a href="/products">Products</a>
             </li>
             <li>
               <a href="#blog">Blog</a>
@@ -78,7 +78,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#products" onClick={toggleMenu}>
+              <a href="/products" onClick={toggleMenu}>
                 Products
               </a>
             </li>

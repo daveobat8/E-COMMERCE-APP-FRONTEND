@@ -14,10 +14,7 @@ function Home() {
         <button className="btn">
           View Shop
         </button>
-      </div>
-      <div className="home-image">
-       <img src="image1.png" alt="home-image" className="image1"/>
-       </div>
+        </div>
     </>
   );
 }
