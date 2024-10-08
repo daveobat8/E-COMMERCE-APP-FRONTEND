@@ -38,8 +38,13 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#cart">
+              <a href="/cart">
                 <img src="cart.png" alt="Cart" className="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="/login">
+                <img src="login.png" alt="Login" className="icon" />
               </a>
             </li>
           </ul>

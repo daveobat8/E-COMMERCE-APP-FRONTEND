@@ -18,8 +18,29 @@ function Products() {
   }, []);
 
   const handleAddToCart = (product) => {
-    console.log(`${product.name} added to cart!`);
-    // Add functionality to actually add product to cart
+    fetch("http://127.0.0.1:5000/cart_items", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        product_id: product.id, 
+        quantity: 1, 
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to add product to cart");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(`${product.name} added to cart!`, data);
+        // You can update cart state here if needed or show success message
+      })
+      .catch((error) => {
+        console.error("Error adding product to cart:", error);
+      });
   };
 
   const handleViewProduct = (product) => {

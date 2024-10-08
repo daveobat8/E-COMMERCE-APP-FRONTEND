@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import About from "../sections/About";
 
 function Welcome() {
+  const [categories,setCategories]= useState([])
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:5000/category")
+      .then((response) => response.json())
+      .then((data) => {
+        setCategories(data);
+        console.log(data);
+      })
+      .catch((error) => console.error("Error fetching categories:", error));
+  }, []);
   return (
     <>
       <div className="home">
@@ -15,6 +27,10 @@ function Welcome() {
           View Shop
         </button>
         </div>
+        <div className="welcome-container">
+          <h1>Browse Our Categories</h1>
+        </div>
+        <About />
     </>
   );
 }
