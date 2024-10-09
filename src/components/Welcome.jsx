@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "../components/Card";
-import About from "../sections/About";
 
 function Welcome() {
-  const [categories,setCategories]= useState([])
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/category")
@@ -23,14 +21,23 @@ function Welcome() {
         <div className="section-text">
           <p>A fast and affordable option</p>
         </div>
-        <button className="btn">
-          View Shop
-        </button>
-        </div>
-        <div className="welcome-container">
-          <h1>Browse Our Categories</h1>
-        </div>
-        <About />
+        <button className="btn">View Shop</button>
+      </div>
+      <div className="about-details-container">
+      <div className="title1">
+        <h1>Categories</h1>
+      </div>
+      <div className="about-containers">
+        {categories.map((category) => (
+          <div className="details-container" key={category.id}>
+            <img src={category.image_url} alt={`${category.name} icon`} className="icon" />
+            <h3>{category.name}</h3>
+            <p>{category.description}</p>
+            <p>{category.product_count}</p>
+          </div>
+        ))}
+      </div>
+    </div>
     </>
   );
 }

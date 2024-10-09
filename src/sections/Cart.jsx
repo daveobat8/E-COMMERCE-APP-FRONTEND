@@ -9,7 +9,6 @@ function Cart() {
           .then((response) => response.json())
           .then((data) => {
             setProducts(data);
-            console.log(data);
           })
           .catch((error) => console.error("Error fetching cart_items:", error));
       }, []);
