@@ -78,3 +78,49 @@
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+
+/* Media Queries */
+
+/* Screen width max 1250px */
+@media (max-width: 1250px) {
+    .product-detail {
+        max-width: 700px;
+        gap: 15px;
+    }
+    .product-image2 {
+        width: 250px;
+    }
+}
+
+/* Screen width max 700px */
+@media (max-width: 700px) {
+    .product-detail {
+        flex-direction: column; /* Stack image and info vertically */
+        align-items: center; /* Center the content */
+        text-align: center; /* Align text to the center */
+    }
+    .product-info {
+        align-items: center; /* Center info section on small screens */
+    }
+    .product-image2 {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Screen width max 550px */
+@media (max-width: 550px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+    .product-detail {
+        padding: 15px;
+    }
+    .product-image2 {
+        width: 100%;
+        max-width: 300px;
+    }
+    .add-to-cart2 {
+        width: 100%;
+    }
+}
