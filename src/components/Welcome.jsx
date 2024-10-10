@@ -23,17 +23,16 @@ function Welcome() {
         </div>
         <button className="btn">View Shop</button>
       </div>
-      <div className="about-details-container">
-      <div className="title1">
-        <h1>Categories</h1>
-      </div>
-      <div className="about-containers">
+      <div >
+      <div className="category-container">
         {categories.map((category) => (
-          <div className="details-container" key={category.id}>
-            <img src={category.image_url} alt={`${category.name} icon`} className="icon" />
+          <div className="category-details" key={category.id}>
+            <a href="/products"><img src={category.image_url} alt={`${category.name} icon`} className="category-image" />
+            <div className="category-overlay">
             <h3>{category.name}</h3>
-            <p>{category.description}</p>
             <p>{category.product_count}</p>
+            </div>
+            </a>
           </div>
         ))}
       </div>
