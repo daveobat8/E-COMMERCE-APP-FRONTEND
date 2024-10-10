@@ -7,6 +7,8 @@ import Home from './sections/Home';
 import Product from './sections/Product';
 import Cart from './sections/Cart';
 import Login from './sections/Login';
+import Blog from './sections/Blog';
+import About from './sections/About';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/product/:productId" element={<Product />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/#about" element={<About />} />
       </Routes>
     </>
   );
