@@ -6,43 +6,23 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, rgb(62, 235, 134), rgb(15, 165, 60));
-    height: 0; 
-    overflow: hidden; 
-    animation: backgroundSlideDown 1.5s forwards ease-in; 
+    height: 50vh; 
 }
 
 /* Title and Section Text */
 .title, .section-text {
-    opacity: 0; 
-    transform: translateY(-50px);
-    animation: dropIn 1s forwards;
+    opacity: 1; 
 }
 
 .title {
-    animation-delay: 1.5s; 
     text-align: center;
 }
 
 .section-text {
-    animation-delay: 1s; 
     display: flex;
     gap: 1.5rem;
 }
 
-/* Background Slide Down Animation */
-@keyframes backgroundSlideDown {
-    to {
-        height: 50vh; /* Full height of the background */
-    }
-}
-
-/* Drop In Animation */
-@keyframes dropIn {
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Text drops into place */
-    }
-}
 /* Buttons */
 .btn{
     font-weight: 600;
@@ -53,13 +33,13 @@
     border: rgb(27, 192, 76) solid 2px;
     font-family: "Poppins", sans-serif;
     border-radius: 2rem;
-  }
+}
   
-  .btn:hover{
+.btn:hover{
     background-color:rgb(66, 66, 66);
     cursor: pointer;
     color: white;
-  }
+}
 
 /* Category Container */
 .category-container {
@@ -70,17 +50,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    opacity: 0; 
-    transform: translateY(50px); 
-    animation: categoriesFadeIn 0.6s forwards;
-}
-
-/* Fade-in Animation for Categories */
-@keyframes categoriesFadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Moves into place */
-    }
 }
 
 /* Category Titles */
@@ -97,10 +66,6 @@
     max-width: 300px; /* Adjust to fit your layout */
     overflow: hidden;
     border-radius: 1rem;
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.9); /* Start slightly smaller */
-    animation: fadeInAndScaleUp 0.5s forwards;
-    animation-delay: 3.5s; /* Slight delay for categories to come in */
 }
 
 /* Category Image */
@@ -137,17 +102,8 @@
     transform: scale(1.2); 
 }
 
-
 .category-details p {
     margin: 0;
     padding: 5px 0;
     color: white !important;
-}
-
-
-@keyframes fadeInAndScaleUp {
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
