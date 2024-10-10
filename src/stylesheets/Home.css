@@ -1,0 +1,80 @@
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 192, 76);
+    height: 0; 
+    border-radius: 0.5rem;
+    overflow: hidden; 
+    animation: backgroundSlideDown 1.5s forwards; 
+}
+
+.title, .section-text {
+    opacity: 0; 
+    transform: translateY(-50px);
+    animation: dropIn 1s forwards; 
+}
+
+.title {
+    animation-delay: 1.5s; 
+    text-align: center;
+}
+.title1 {
+
+    text-align: center;
+}
+
+.section-text {
+    animation-delay: 2s; /* Delays the section text to appear after the title */
+    display: flex;
+    gap: 1.5rem;
+}
+
+@keyframes backgroundSlideDown {
+    to {
+        height: 50vh; /* Full height of the background */
+    }
+}
+
+@keyframes dropIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Text drops into place */
+    }
+}
+/* Image */
+.home-image{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateX(-20%);
+  height: 400px;
+  max-width: 300px;
+ 
+}
+
+.image1{
+  width: 100%;
+  height: auto; 
+  border-radius: 0.5rem;
+}
+
+/* Buttons */
+.btn{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 8rem;
+  border: rgb(27, 192, 76) solid 2px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+}
+
+.btn:hover{
+  background-color:rgb(66, 66, 66);
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,152 @@
+nav, .nav-links{
+    display: flex;
+  }
+  
+  nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+  }
+  
+  .nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  
+  a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  
+  }
+  
+  a:hover{
+    color: rgb(27, 192, 76);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(27, 192, 76);
+    transition: 0.4s ease-in-out;
+  }
+  
+  .logo{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 4px;
+    color: inherit;
+  }
+  
+  .logo:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* HAMBURGER MENU */
+  
+  #hamburger-nav{
+    display: none;
+  
+  }
+  
+  .hamburger-menu{
+    position: relative;
+    display: flex;
+    border-radius: 0.5rem;
+  }
+  
+  .hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    
+  }
+  
+  .hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .cart-links{
+      display: flex;
+      list-style-type: none;
+      gap: 2rem;
+      margin-right: 2rem;
+  }
+  
+  .menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-links.open{
+    max-height: 300px;
+  }
+  
+  .menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-links li{
+    list-style: none;
+  }
+  
+  
+  
+  .hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+  }
+  
+  
+  .hamburger-icon span:first-child{
+    transform: none;
+  }
+  .hamburger-icon span:first-child{
+    opacity: 1;
+  }
+  .hamburger-icon span:first-child{
+    transform: none;
+  }
+  
+  /*ICONS*/
+  .icon{
+      padding: 2px 0;
+      margin: 0;
+      height: 1.5rem;
+    }
+  
+  .logo_icon{
+      cursor: default;
+      padding: 5px 0;
+      margin: 0;
+      height: 1.5rem;
+  }
+  .logo_icon2{
+    cursor: default;
+    position: inherit;
+    padding: auto;
+    height: 1.2rem;
+  }

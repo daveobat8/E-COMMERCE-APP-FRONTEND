@@ -3,7 +3,6 @@ import "./App.css";
 import "./Mediaqueries.css"
 import Navbar from "./components/Navbar";
 import Products from "./sections/Products";
-import Welcome from './components/Welcome';
 import Home from './sections/Home';
 import Product from './sections/Product';
 import Cart from './sections/Cart';
