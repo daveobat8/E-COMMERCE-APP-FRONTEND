@@ -16,7 +16,9 @@ section {
   #about{
     position: relative;
   }
-  
+  .title1{
+    text-align: center;
+  }
   .about-containers{
     gap: 2rem;
     margin-bottom: 2rem;

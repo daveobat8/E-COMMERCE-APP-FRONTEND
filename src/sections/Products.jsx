@@ -51,7 +51,7 @@ function Products() {
   );
 
   return (
-    <>
+    <div className="products-page">
       <div className="search-container">
         <input
           type="text"
@@ -65,10 +65,12 @@ function Products() {
         {filteredProducts.map((product, index) => (
           <div className="card" key={index}>
             <img className="product-image" src={product.image_url} />
+            <div className="product-details">
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <p>Price: {product.price}</p>
-            <div className="buttons">
+            <p className="price">Price: {product.price}</p>
+            </div>
+            <div className="card-buttons">
               <button
                 onClick={() => handleAddToCart(product)}
                 className="add-to-cart"
@@ -85,7 +87,7 @@ function Products() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

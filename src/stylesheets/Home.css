@@ -7,7 +7,6 @@
     align-items: center;
     background: linear-gradient(to right, rgb(62, 235, 134), rgb(15, 165, 60));
     height: 0; 
-    border-radius: 0.5rem;
     overflow: hidden; 
     animation: backgroundSlideDown 1.5s forwards ease-in; 
 }
@@ -135,17 +134,17 @@
 }
 
 .category-details:hover .category-image {
-    transform: scale(1.1); /* Zoom image slightly */
+    transform: scale(1.2); 
 }
 
-/* Text inside categories */
+
 .category-details p {
     margin: 0;
     padding: 5px 0;
     color: white !important;
 }
 
-/* Animation for scaling up and fading in categories */
+
 @keyframes fadeInAndScaleUp {
     to {
         opacity: 1;

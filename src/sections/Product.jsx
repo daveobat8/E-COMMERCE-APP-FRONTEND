@@ -15,21 +15,20 @@ function Product() {
       })
       .then((data) => {
         setProduct(data);
-        setLoading(false);
+
       })
       .catch((error) => {
         console.error("Error fetching product:", error);
-        setError(error);
-        setLoading(false);
+
       });
   }, [productId]);
 
   return (
     <div className="product-page">
       {product ? ( // Check if the product is available
-        <>
+        <div className="product">
           <h1 className="product-title">{product.name}</h1>
-          <div className="product-details">
+          <div className="product-detail">
             <img
               className="product-image2"
               src={product.image_url}
@@ -48,7 +47,7 @@ function Product() {
               </button>
             </div>
           </div>
-        </>
+        </div>
       ) : (
         <p>Loading product...</p> // Loading state while fetching
       )}
