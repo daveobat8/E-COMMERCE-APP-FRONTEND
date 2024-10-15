@@ -21,7 +21,7 @@ function Welcome() {
         <div className="section-text">
           <p>A fast and affordable option</p>
         </div>
-        <button className="btn">View Shop</button>
+        <button className="btn"><a href="/products" className="view-shop">View Shop</a></button>
       </div>
       <div >
       <div className="category-container">

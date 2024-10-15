@@ -11,15 +11,11 @@ function Navbar() {
   return (
     <>
       <nav id="desktop-nav">
-        <NavLink to='/' className="logo">
+        <NavLink to='/home' className="logo">
           Nunua <div> <img src="logo.png" alt="Cart" className=" logo_icon" /></div>
         </NavLink>
         <div>
           <ul className="nav-links">
-            
-            <li>
-              <a href="#shop">Shop</a>
-            </li>
             <li>
               <a href="/products">Products</a>
             </li>
@@ -27,13 +23,13 @@ function Navbar() {
               <a href="/blog">Blog</a>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <a href="/home#about">About</a>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <a href="/home#contact">Contact Us</a>
             </li>
             <li>
-              <a href="#search">
+              <a href="/products">
                 <img src="search.png" alt="Cart" className="icon" />
               </a>
             </li>
@@ -43,7 +39,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/login">
+              <a href="/">
                 <img src="login.png" alt="Login" className="icon" />
               </a>
             </li>
@@ -55,12 +51,12 @@ function Navbar() {
         <div className="hamburger-menu">
           <div className="cart-links">
           <li>
-              <a href="#search">
+              <a href="/products">
                 <img src="search.png" alt="Cart" className="icon" />
               </a>
             </li>
             <li>
-              <a href="#cart">
+              <a href="/cart">
                 <img src="cart.png" alt="Cart" className="icon" />
               </a>
             </li></div>
@@ -74,13 +70,8 @@ function Navbar() {
           </div>
           <div className={`menu-links ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="#about" onClick={toggleMenu}>
+              <a href="/#about" onClick={toggleMenu}>
                 About
-              </a>
-            </li>
-            <li>
-              <a href="#shop" onClick={toggleMenu}>
-                Shop
               </a>
             </li>
             <li>
@@ -94,7 +85,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={toggleMenu}>
+              <a href="/#contact" onClick={toggleMenu}>
                 Contact Us
               </a>
             </li>

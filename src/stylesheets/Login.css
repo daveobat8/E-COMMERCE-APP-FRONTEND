@@ -197,3 +197,12 @@
   .container1.active .toggle-right{
     transform: translateX(200%);
   }
+
+  .continue{
+  
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+  .continue:hover{
+    text-decoration: none;
+  }

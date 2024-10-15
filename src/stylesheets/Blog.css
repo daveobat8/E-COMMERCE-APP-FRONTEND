@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    height: 100vh;
+    background: #ececec;
 }
 #blog{
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    padding-bottom: 10px;
+
 }
 .blog-heading{
     display: flex;
@@ -89,6 +90,9 @@
 }
 
 @media (max-width:1250px){
+    .blog{
+        height: 100vh;
+    }
     .blog-box{
         width: 700px;
     }
@@ -108,7 +112,5 @@
         width: 90%;
         margin: 20px 0;
     }
-    #blog{
-        padding: 20px;
-    }
+    
 }

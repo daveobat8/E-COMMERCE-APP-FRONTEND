@@ -40,6 +40,10 @@
     cursor: pointer;
     color: white;
 }
+.view-shop:hover{
+    text-decoration: none;
+    color: white !important;
+}
 
 /* Category Container */
 .category-container {

@@ -4,7 +4,6 @@ function Blog() {
   return (
     <section id="blog" className="blog">
       <div className="blog-heading">
-        <span>My Recent Post</span>
         <h3>My Blog</h3>
         <div className="blog-container">
           <div className="blog-box">
